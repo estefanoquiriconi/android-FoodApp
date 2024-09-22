@@ -23,7 +23,7 @@ public class RecoverPasswordActivity extends AppCompatActivity {
         });
     }
 
-    public void retornar(View view){
+    public void goBack(View view){
         finish();
     }
 }

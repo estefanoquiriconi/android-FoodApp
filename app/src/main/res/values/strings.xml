@@ -1,8 +1,13 @@
 <resources>
     <string name="app_name">FoodApp</string>
-    <string name="labelName">NOMBRE</string>
-    <string name="labelEmail">EMAIL</string>
-    <string name="labelPassword">PASSWORD</string>
-    <string name="labelConfirmPassword">CONFIRMAR PASSWORD</string>
+    <string name="labelName">Nombre</string>
+    <string name="labelEmail">Email</string>
+    <string name="labelPassword">Contraseña</string>
+    <string name="labelConfirmPassword">Confirmar contraseña</string>
     <string name="recoverPasswordMessage">Por favor ingrese su dirección de email. Recibirá un link para crear una nueva password via email.</string>
+    <string name="enviar">Enviar</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="iniciar_sesion">Iniciar sesión</string>
+    <string name="ya_tienes_una_cuenta">Ya tienes una cuenta?</string>
+    <string name="has_olvidado_tu_contrasena">Has olvidado tu contraseña</string>
 </resources>
