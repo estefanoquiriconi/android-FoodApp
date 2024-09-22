@@ -4,7 +4,7 @@
     <string name="labelEmail">Email</string>
     <string name="labelPassword">Contraseña</string>
     <string name="labelConfirmPassword">Confirmar contraseña</string>
-    <string name="recoverPasswordMessage">Por favor ingrese su dirección de email. Recibirá un link para crear una nueva password via email.</string>
+    <string name="recoverPasswordMessage">Por favor ingrese su dirección de correo electrónico. Recibirá un link para crear una nueva contraseña.</string>
     <string name="enviar">Enviar</string>
     <string name="registrarse">Registrarse</string>
     <string name="iniciar_sesion">Iniciar sesión</string>
