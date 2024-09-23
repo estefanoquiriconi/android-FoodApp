@@ -112,7 +112,8 @@
       android:textColor="@color/secondary_color"
       android:textSize="@dimen/text_size"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/buttonDone" />
+      app:layout_constraintTop_toBottomOf="@+id/buttonDone"
+      tools:ignore="TextContrastCheck" />
 
   <TextView
       android:id="@+id/tvRegister"

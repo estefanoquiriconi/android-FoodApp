@@ -1,6 +1,8 @@
 package com.estefano.foodapp;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,4 +23,14 @@ public class NewPasswordActivity extends AppCompatActivity {
             return insets;
         });
     }
+
+    public void goBack(View view){
+        finish();
+    }
+
+    public void goProfile(View view){
+        Intent intent = new Intent(this, ProfileActivity.class);
+        startActivity(intent);
+    }
+
 }

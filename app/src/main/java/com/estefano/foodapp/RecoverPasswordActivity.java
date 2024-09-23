@@ -36,7 +36,7 @@ public class RecoverPasswordActivity extends AppCompatActivity {
         finish();
     }
 
-    public void goPasswordReset(View view){
+    public void passwordReset(View view){
         Intent intent = new Intent(this, PasswordResetActivity.class);
         startActivity(intent);
     }

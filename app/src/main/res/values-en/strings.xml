@@ -4,7 +4,9 @@
     <string name="name_label">Name</string>
     <string name="email_label">Email</string>
     <string name="password_label">Password</string>
-    <string name="confirm_password_label">Confirm Password</string>
+    <string name="new_password_label">New password</string>
+    <string name="confirm_password_label">Confirm password</string>
+    <string name="change_password">Change password</string>
     <string name="recover_password_message">Please enter your email address. You will receive a link to create a new password.</string>
     <string name="send_button">Send</string>
     <string name="register">Register</string>
@@ -15,4 +17,5 @@
     <string name="forgot_password_question">Forgot your password?</string>
     <string name="password_reset_message">Your password has been reset!</string>
     <string name="done">Done</string>
+    <string name="enter_new_password">Enter new password and confirm.</string>
 </resources>
