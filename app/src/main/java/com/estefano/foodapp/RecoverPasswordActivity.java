@@ -1,5 +1,6 @@
 package com.estefano.foodapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -33,5 +34,10 @@ public class RecoverPasswordActivity extends AppCompatActivity {
 
     public void goBack(View view){
         finish();
+    }
+
+    public void goPasswordReset(View view){
+        Intent intent = new Intent(this, PasswordResetActivity.class);
+        startActivity(intent);
     }
 }
