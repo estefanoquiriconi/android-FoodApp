@@ -10,7 +10,9 @@
     <string name="register">Register</string>
     <string name="sign_in">Sign In</string>
     <string name="already_have_account">Already have an account?</string>
-    <string name="forgot_password">Forgot your password?</string>
+    <string name="forgot_password">Forgot password</string>
     <string name="no_account">Don\'t have an account?</string>
     <string name="forgot_password_question">Forgot your password?</string>
+    <string name="password_reset_message">Your password has been reset!</string>
+    <string name="done">Done</string>
 </resources>

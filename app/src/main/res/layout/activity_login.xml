@@ -12,7 +12,7 @@
       android:id="@+id/tvForgotPassword"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_marginTop="32dp"
+      android:layout_marginTop="16dp"
       android:layout_marginEnd="16dp"
       android:clickable="true"
       android:focusable="true"
@@ -87,17 +87,17 @@
   </com.google.android.material.textfield.TextInputLayout>
 
   <Button
-      android:id="@+id/buttonSingIn"
-      android:layout_width="0dp"
-      android:layout_height="wrap_content"
+      android:id="@+id/buttonDone"
+      android:layout_width="fill_parent"
+      android:layout_height="@dimen/button_height"
       android:layout_marginStart="16dp"
       android:layout_marginTop="32dp"
       android:layout_marginEnd="16dp"
       android:backgroundTint="@color/primary_color"
       android:text="@string/sign_in"
       android:textAllCaps="true"
+      android:textColor="@color/white"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.0"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/tvForgotPassword"
       tools:ignore="TextContrastCheck" />
@@ -112,7 +112,7 @@
       android:textColor="@color/secondary_color"
       android:textSize="@dimen/text_size"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/buttonSingIn" />
+      app:layout_constraintTop_toBottomOf="@+id/buttonDone" />
 
   <TextView
       android:id="@+id/tvRegister"
@@ -127,7 +127,7 @@
       android:textColor="@color/primary_color"
       android:textSize="@dimen/text_size"
       app:layout_constraintStart_toEndOf="@+id/tvNoAccount"
-      app:layout_constraintTop_toBottomOf="@+id/buttonSingIn"
+      app:layout_constraintTop_toBottomOf="@+id/buttonDone"
       tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
 
   <LinearLayout
@@ -146,7 +146,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:importantForAccessibility="no"
-        app:srcCompat="@drawable/chrome"
+        app:srcCompat="@drawable/facebook"
         tools:ignore="ImageContrastCheck" />
 
     <ImageView
@@ -155,14 +155,15 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:importantForAccessibility="no"
-        app:srcCompat="@drawable/facebook" />
+        app:srcCompat="@drawable/twitter"
+        tools:ignore="ImageContrastCheck" />
 
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        app:srcCompat="@drawable/twitter"
+        app:srcCompat="@drawable/chrome"
         tools:ignore="ContentDescription,ImageContrastCheck" />
   </LinearLayout>
 
