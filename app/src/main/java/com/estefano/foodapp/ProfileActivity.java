@@ -1,6 +1,8 @@
 package com.estefano.foodapp;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,4 +23,10 @@ public class ProfileActivity extends AppCompatActivity {
             return insets;
         });
     }
+
+    public void signOut(View view){
+        startActivity(new Intent(this, LoginActivity.class));
+        finish();
+    }
+
 }
