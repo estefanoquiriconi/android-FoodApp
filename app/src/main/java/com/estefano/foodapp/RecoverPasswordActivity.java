@@ -1,9 +1,6 @@
 package com.estefano.foodapp;
 
 import android.os.Bundle;
-import android.text.Editable;
-import android.text.TextWatcher;
-import android.util.Patterns;
 import android.view.View;
 
 import androidx.activity.EdgeToEdge;
@@ -13,6 +10,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.estefano.foodapp.databinding.ActivityRecoverPasswordBinding;
+import com.estefano.foodapp.validators.EmailValidator;
 
 public class RecoverPasswordActivity extends AppCompatActivity {
 
@@ -20,7 +18,6 @@ public class RecoverPasswordActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         binding = ActivityRecoverPasswordBinding.inflate(getLayoutInflater());
@@ -31,25 +28,8 @@ public class RecoverPasswordActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-
-        binding.editTextEmail.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
-            }
-
-            @Override
-            public void afterTextChanged(Editable editable) {
-                binding.textFieldEmail.setEndIconVisible(Patterns.EMAIL_ADDRESS.matcher(editable.toString()).matches());
-            }
-        });
+        EmailValidator.setupEmailValidation(binding.editTextEmail, binding.textFieldEmail);
     }
-
 
     public void goBack(View view){
         finish();

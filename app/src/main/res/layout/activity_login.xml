@@ -8,4 +8,162 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
 
+  <TextView
+      android:id="@+id/tvForgotPassoword"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="32dp"
+      android:layout_marginEnd="16dp"
+      android:clickable="true"
+      android:focusable="true"
+      android:onClick="goRecoverPassword"
+      android:text="@string/forgot_password_question"
+      android:textColor="@color/primary_color"
+      android:textSize="@dimen/text_size"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textFieldPassword"
+      tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+  <TextView
+      android:id="@+id/tvSignIn"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_margin="20dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="32dp"
+      android:layout_marginEnd="16dp"
+      android:text="@string/sign_in"
+      android:textSize="34sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/textFieldEmail"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="32dp"
+      android:layout_marginEnd="16dp"
+      android:hint="@string/email_label"
+      app:endIconMode="custom"
+      app:endIconDrawable="@drawable/ic_check"
+      app:endIconTint="@color/green"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tvSignIn">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        tools:ignore="TextContrastCheck" />
+
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/textFieldPassword"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="26dp"
+      android:layout_marginEnd="16dp"
+      android:hint="@string/password_label"
+      app:endIconMode="password_toggle"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textFieldEmail">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        tools:ignore="TextContrastCheck" />
+
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <Button
+      android:id="@+id/buttonSingIn"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="32dp"
+      android:layout_marginEnd="16dp"
+      android:backgroundTint="@color/primary_color"
+      android:text="@string/sign_in"
+      android:textAllCaps="true"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tvForgotPassoword"
+      tools:ignore="TextContrastCheck" />
+
+  <TextView
+      android:id="@+id/tvNoAccount"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="32dp"
+      android:text="@string/no_account"
+      android:textColor="@color/secondary_color"
+      android:textSize="@dimen/text_size"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/buttonSingIn" />
+
+  <TextView
+      android:id="@+id/tvRegister"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="5dp"
+      android:layout_marginTop="32dp"
+      android:clickable="true"
+      android:focusable="true"
+      android:onClick="goRegister"
+      android:text="@string/register"
+      android:textColor="@color/primary_color"
+      android:textSize="@dimen/text_size"
+      app:layout_constraintStart_toEndOf="@+id/tvNoAccount"
+      app:layout_constraintTop_toBottomOf="@+id/buttonSingIn"
+      tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+  <LinearLayout
+      android:id="@+id/linearLayout"
+      android:layout_width="200dp"
+      android:layout_height="45dp"
+      android:layout_marginTop="80dp"
+      android:orientation="horizontal"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/tvNoAccount">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:importantForAccessibility="no"
+        app:srcCompat="@drawable/cromo"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:importantForAccessibility="no"
+        app:srcCompat="@drawable/facebook" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/gorjeo"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+  </LinearLayout>
+
   </androidx.constraintlayout.widget.ConstraintLayout>

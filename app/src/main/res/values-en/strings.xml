@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Hunny Food</string>
+    <string name="name_label">Name</string>
+    <string name="email_label">Email</string>
+    <string name="password_label">Password</string>
+    <string name="confirm_password_label">Confirm Password</string>
+    <string name="recover_password_message">Please enter your email address. You will receive a link to create a new password.</string>
+    <string name="send_button">Send</string>
+    <string name="register">Register</string>
+    <string name="sign_in">Sign In</string>
+    <string name="already_have_account">Already have an account?</string>
+    <string name="forgot_password">Forgot your password?</string>
+    <string name="no_account">Don\'t have an account?</string>
+    <string name="forgot_password_question">Forgot your password?</string>
+</resources>

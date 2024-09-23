@@ -1,13 +1,15 @@
 <resources>
-    <string name="app_name">FoodApp</string>
-    <string name="labelName">Nombre</string>
-    <string name="labelEmail">Email</string>
-    <string name="labelPassword">Contraseña</string>
-    <string name="labelConfirmPassword">Confirmar contraseña</string>
-    <string name="recoverPasswordMessage">Por favor ingrese su dirección de correo electrónico. Recibirá un link para crear una nueva contraseña.</string>
-    <string name="enviar">Enviar</string>
-    <string name="registrarse">Registrarse</string>
-    <string name="iniciar_sesion">Iniciar sesión</string>
-    <string name="ya_tienes_una_cuenta">Ya tienes una cuenta?</string>
-    <string name="has_olvidado_tu_contrasena">Has olvidado tu contraseña</string>
+    <string name="app_name">Hunny Food</string>
+    <string name="name_label">Nombre</string>
+    <string name="email_label">Correo electrónico</string>
+    <string name="password_label">Contraseña</string>
+    <string name="confirm_password_label">Confirmar contraseña</string>
+    <string name="recover_password_message">Por favor ingrese su dirección de correo electrónico. Recibirá un link para crear una nueva contraseña.</string>
+    <string name="register">Registrarse</string>
+    <string name="sign_in">Iniciar sesión</string>
+    <string name="send_button">Enviar</string>
+    <string name="already_have_account">Ya tienes una cuenta?</string>
+    <string name="forgot_password">Has olvidado tu contraseña</string>
+    <string name="no_account">No tienes una cuenta?</string>
+    <string name="forgot_password_question">¿Olvidó su contraseña?</string>
 </resources>

@@ -24,11 +24,8 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void registrarse(View view) {
-        startActivity(new Intent(this, RegisterActivity.class));
+    public void login(View view){
+        startActivity(new Intent(this, LoginActivity.class));
     }
 
-    public void recuperarContra(View view){
-        startActivity(new Intent(this, RecoverPasswordActivity.class));
-    }
 }
