@@ -175,7 +175,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:importantForAccessibility="no"
-            app:srcCompat="@drawable/cromo"
+            app:srcCompat="@drawable/chrome"
             tools:ignore="ImageContrastCheck" />
 
         <ImageView
@@ -191,7 +191,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@drawable/gorjeo"
+            app:srcCompat="@drawable/twitter"
             tools:ignore="ContentDescription,ImageContrastCheck" />
     </LinearLayout>
 
