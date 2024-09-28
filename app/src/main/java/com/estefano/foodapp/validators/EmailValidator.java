@@ -1,10 +1,15 @@
 package com.estefano.foodapp.validators;
 
+import android.graphics.drawable.Drawable;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Patterns;
 import android.widget.EditText;
 
+import androidx.core.content.ContextCompat;
+
+import com.estefano.foodapp.LoginActivity;
+import com.estefano.foodapp.R;
 import com.google.android.material.textfield.TextInputLayout;
 
 public class EmailValidator {
@@ -22,7 +27,14 @@ public class EmailValidator {
 
             @Override
             public void afterTextChanged(Editable editable) {
-                textFieldEmail.setEndIconVisible(Patterns.EMAIL_ADDRESS.matcher(editable.toString()).matches());
+                if(Patterns.EMAIL_ADDRESS.matcher(editable.toString()).matches()){
+                    textFieldEmail.setEndIconDrawable(R.drawable.ic_check);
+                    Drawable endIcon = textFieldEmail.getEndIconDrawable();
+                    if(endIcon != null)
+                        endIcon.setTint(ContextCompat.getColor(textFieldEmail.getContext(), R.color.green));
+                }else{
+                    textFieldEmail.setEndIconDrawable(R.drawable.ic_cancel);
+                }
             }
         });
     }

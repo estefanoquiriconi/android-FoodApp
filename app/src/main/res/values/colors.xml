@@ -5,4 +5,5 @@
     <color name="green">#008000</color>
     <color name="primary_color">#F54749</color>
     <color name="secondary_color">#80869A</color>
+    <color name="red">#FF0000</color>
 </resources>
