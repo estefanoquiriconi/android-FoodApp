@@ -1,4 +1,4 @@
-package com.estefano.foodapp.validators;
+package com.estefano.foodapp.herlpers;
 
 import android.graphics.drawable.Drawable;
 import android.text.Editable;
@@ -8,7 +8,6 @@ import android.widget.EditText;
 
 import androidx.core.content.ContextCompat;
 
-import com.estefano.foodapp.LoginActivity;
 import com.estefano.foodapp.R;
 import com.google.android.material.textfield.TextInputLayout;
 

@@ -86,7 +86,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:id="@+id/buttonDone"
+            android:id="@+id/buttonSignIn"
             android:layout_width="fill_parent"
             android:layout_height="@dimen/button_height"
             android:layout_marginStart="16dp"
@@ -111,7 +111,7 @@
             android:textColor="@color/secondary_color"
             android:textSize="@dimen/text_size"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/buttonDone"
+            app:layout_constraintTop_toBottomOf="@+id/buttonSignIn"
             tools:ignore="TextContrastCheck" />
 
         <TextView
@@ -127,7 +127,7 @@
             android:textColor="@color/primary_color"
             android:textSize="@dimen/text_size"
             app:layout_constraintStart_toEndOf="@+id/tvNoAccount"
-            app:layout_constraintTop_toBottomOf="@+id/buttonDone"
+            app:layout_constraintTop_toBottomOf="@+id/buttonSignIn"
             tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
 
         <LinearLayout

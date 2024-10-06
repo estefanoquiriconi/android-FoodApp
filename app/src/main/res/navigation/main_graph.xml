@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_loginFragment_to_recoverPasswordFragment"
             app:destination="@id/recoverPasswordFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
     </fragment>
     <fragment
         android:id="@+id/registerFragment"
@@ -34,5 +37,34 @@
         <action
             android:id="@+id/action_recoverPasswordFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_recoverPasswordFragment_to_newPasswordFragment"
+            app:destination="@id/newPasswordFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/newPasswordFragment"
+        android:name="com.estefano.foodapp.fragments.newPasswordFragment"
+        android:label="fragment_new_password"
+        tools:layout="@layout/fragment_new_password" >
+        <action
+            android:id="@+id/action_newPasswordFragment_to_passwordResetFragment"
+            app:destination="@id/passwordResetFragment" />
+        <action
+            android:id="@+id/action_newPasswordFragment_to_recoverPasswordFragment"
+            app:destination="@id/recoverPasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/passwordResetFragment"
+        android:name="com.estefano.foodapp.fragments.PasswordResetFragment"
+        android:label="fragment_password_reset"
+        tools:layout="@layout/fragment_password_reset" >
+        <action
+            android:id="@+id/action_passwordResetFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.estefano.foodapp.fragments.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
 </navigation>

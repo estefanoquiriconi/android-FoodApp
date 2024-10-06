@@ -11,7 +11,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.estefano.foodapp.databinding.ActivityLoginBinding;
-import com.estefano.foodapp.validators.EmailValidator;
+import com.estefano.foodapp.herlpers.EmailValidator;
 
 public class LoginActivity extends AppCompatActivity {
 
