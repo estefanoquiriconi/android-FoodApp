@@ -4,6 +4,7 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,6 +22,8 @@ public class ProfileFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         binding = FragmentProfileBinding.inflate(getLayoutInflater());
+
+        binding.signOut.setOnClickListener(v -> Navigation.findNavController(v).navigate(R.id.action_profileFragment_to_loginFragment));
 
         return binding.getRoot();
     }
